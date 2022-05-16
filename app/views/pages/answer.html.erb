@@ -1,0 +1,15 @@
+<div class= "question">
+ 
+</div>
+
+
+<% if params[:answer] == "I am going to work" %>
+<%= "Great!" %>
+<% elsif params[:answer].include?("?")%>
+<%=  " Silly question, get dressed and go to work!"%>
+<% else %>
+<%= "I don't care, get dressed and go to work!" %>
+<% end  %>
+<div class= "link">
+<%= link_to "Next question", ask_path %>
+</div>
